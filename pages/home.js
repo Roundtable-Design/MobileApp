@@ -1,15 +1,27 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
+import { Card, Paragraph, Title } from "react-native-paper";
 
 import { Link } from "react-router-native";
 import React from "react";
 
+// import styled from "styled-components";
+//  home page
+//    all entries (sort by date)
+//      entry.title
+//      entry.description
+
 export default function Home() {
+	// const history = useHistory();
+
 	return (
 		<View style={styles.container}>
-			<Text>This is Home!</Text>
-
-			<Link to="/upload">
-				<Text>Go to upload page</Text>
+			<Link to="entry">
+				<Card style={styles.entry}>
+					<Card.Content>
+						<Title>Entry title</Title>
+						<Paragraph>Entry description</Paragraph>
+					</Card.Content>
+				</Card>
 			</Link>
 		</View>
 	);
@@ -19,7 +31,8 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: "#fff",
-		alignItems: "center",
-		justifyContent: "center",
+		top: 50,
+		// alignItems: 'center',
+		// justifyContent: 'center',
 	},
 });
