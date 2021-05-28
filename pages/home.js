@@ -11,6 +11,7 @@ import { Link } from "react-router-native";
 //      entry.description
 
 
+import React from "react";
 
 export default function Home() {
  
