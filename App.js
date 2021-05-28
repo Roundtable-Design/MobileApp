@@ -5,6 +5,7 @@ import Entry from "./pages/entry";
 import Home from "./pages/home";
 import React from "react";
 import { Text } from "react-native";
+import Upload from "./pages/upload";
 
 export default function App() {
 	return (
@@ -13,6 +14,8 @@ export default function App() {
 			<Route exact path="/" component={Home} />
 			<Route path="/entry" component={Entry} />
 			{/* <Route path="/edit" component={Edit} /> */}
+
+			<Route path="/upload" component={Upload} />
 		</NativeRouter>
 	);
 }
