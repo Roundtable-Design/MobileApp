@@ -12,7 +12,7 @@ export default function App() {
 			<Text>Hi</Text>
 			<Route exact path="/" component={Home} />
 			<Route path="/entry" component={Entry} />
-			<Route path="/edit" component={Edit} />
+			{/* <Route path="/edit" component={Edit} /> */}
 		</NativeRouter>
 	);
 }
