@@ -13,6 +13,7 @@ import Edit from "./pages/edit";
 export default function App() {
   return (
     <NativeRouter>
+      <Text>Hi</Text>
       <Route exact path="/" component={Home} />
       <Route path="/entry" component={Entry} />
       <Route path="/edit" component={Edit} />
@@ -39,11 +40,3 @@ export default function App() {
 //    description field
 //    content field
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
