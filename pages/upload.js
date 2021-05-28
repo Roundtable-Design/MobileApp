@@ -10,7 +10,7 @@ export default () => {
 	async function startRecording() {
 		try {
 			console.log("Requesting permissions..");
-			sss;
+
 			await Audio.requestPermissionsAsync();
 			await Audio.setAudioModeAsync({
 				allowsRecordingIOS: true,
