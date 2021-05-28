@@ -10,9 +10,6 @@ import { Link } from "react-router-native";
 //      entry.title
 //      entry.description
 
-
-import React from "react";
-
 export default function Home() {
  
   // const history = useHistory();
