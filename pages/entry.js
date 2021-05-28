@@ -15,8 +15,8 @@ export default function Entry() {
         <Text h4 style={styles.title}>Entry title</Text>
         <Text style={styles.content}>Entry content</Text>
         <View style={styles.navbar}>
-            <Link style={styles.navItem} to="/edit"><Text>go Home</Text></Link>
-            <Link style={styles.navItem} to="/"><Text>Edit</Text></Link>
+            <Link style={styles.navItem} to="/"><Text>go Home</Text></Link>
+            <Link style={styles.navItem} to="/edit"><Text>Edit</Text></Link>
         </View>
         
     </View> 
