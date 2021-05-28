@@ -14,9 +14,11 @@ export default function Entry() {
     <View style={styles.container}>
         <Text h4 style={styles.title}>Entry title</Text>
         <Text style={styles.content}>Entry content</Text>
-        <Link style={styles.edit} to="/"><Text>Edit</Text></Link>
-        <Link style={styles.goBack} to="/edit"><Text>go Home</Text></Link>
-      
+        <View style={styles.navbar}>
+            <Link style={styles.navItem} to="/"><Text>Edit</Text></Link>
+            <Link style={styles.navItem} to="/edit"><Text>go Home</Text></Link>
+        </View>
+        
     </View> 
   );
 }
@@ -32,16 +34,18 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
-  edit: {
+  navItem: {
     color: 'red',
-    position: 'absolute',
-    right: 20,
-    bottom: 10,
+    // width: '50%',
+    alignSelf: 'center',
   },
-  goBack: {
-    color: 'red',
+  navbar:{
     position: 'absolute',
     bottom: 10,
-  },
+    flex: 1,
+    flexDirection:'row',
+    justifyContent: 'space-around',
+    width: '100%',
+  }
 
 });
