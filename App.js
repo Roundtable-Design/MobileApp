@@ -18,10 +18,6 @@ export default function App() {
       <Route path="/entry" component={Entry} />
       <Route path="/edit" component={Edit} />
 
-    {/* <View style={styles.container}>
-      <Text>Open Inkar to start working on our app!</Text>
-      <StatusBar style="auto" />
-    </View> */}
     </NativeRouter>
   );
 }
