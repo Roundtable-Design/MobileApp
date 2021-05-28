@@ -1,29 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { NativeRouter, Route, Link } from "react-router-native";
-import Home from "./pages/home";
-import Entry from "./pages/entry";
-import Edit from "./pages/edit";
-// In Expo
-// View is = Div
-// Text is = h1, h2, p
+import { NativeRouter, Route } from "react-router-native";
 
+import Edit from "./pages/edit";
+import Entry from "./pages/entry";
+import Home from "./pages/home";
+import React from "react";
+import { Text } from "react-native";
 
 export default function App() {
-  return (
-    <NativeRouter>
-      <Text>Hi</Text>
-      <Route exact path="/" component={Home} />
-      <Route path="/entry" component={Entry} />
-      <Route path="/edit" component={Edit} />
-
-    {/* <View style={styles.container}>
-      <Text>Open Inkar to start working on our app!</Text>
-      <StatusBar style="auto" />
-    </View> */}
-    </NativeRouter>
-  );
+	return (
+		<NativeRouter>
+			<Text>Hi</Text>
+			<Route exact path="/" component={Home} />
+			<Route path="/entry" component={Entry} />
+			<Route path="/edit" component={Edit} />
+		</NativeRouter>
+	);
 }
 
 // react-router-native
@@ -39,4 +30,3 @@ export default function App() {
 //    title field
 //    description field
 //    content field
-
