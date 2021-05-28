@@ -1,8 +1,8 @@
-import React from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
-import { Card, Title, Paragraph} from 'react-native-paper';
+import { Button, StyleSheet, Text, View } from "react-native";
+import { Card, Paragraph, Title } from "react-native-paper";
 
 import { Link } from "react-router-native";
+import React from "react";
 
 // import styled from "styled-components";
 //  home page
@@ -11,32 +11,28 @@ import { Link } from "react-router-native";
 //      entry.description
 
 export default function Home() {
- 
-  // const history = useHistory();
+	// const history = useHistory();
 
-  return (
-    <View style={styles.container}>
-      <Link to="entry">
-        <Card style={styles.entry}>
-          <Card.Content>
-            <Title>Entry title</Title>
-            <Paragraph>Entry description</Paragraph>
-          </Card.Content>
-        </Card>
-    </Link>
-      
-          
-      
-    </View> 
-  );
+	return (
+		<View style={styles.container}>
+			<Link to="entry">
+				<Card style={styles.entry}>
+					<Card.Content>
+						<Title>Entry title</Title>
+						<Paragraph>Entry description</Paragraph>
+					</Card.Content>
+				</Card>
+			</Link>
+		</View>
+	);
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    top: 50,
-    // alignItems: 'center',
-    // justifyContent: 'center',
-  },
+	container: {
+		flex: 1,
+		backgroundColor: "#fff",
+		top: 50,
+		// alignItems: 'center',
+		// justifyContent: 'center',
+	},
 });

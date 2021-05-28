@@ -5,16 +5,19 @@ import Entry from "./pages/entry";
 import Home from "./pages/home";
 import React from "react";
 import { Text } from "react-native";
+import Upload from "./pages/upload";
 
 export default function App() {
-  return (
-    <NativeRouter>
-      <Route exact path="/" component={Home} />
-      <Route path="/entry" component={Entry} />
-      <Route path="/edit" component={Edit} />
+	return (
+		<NativeRouter>
+			<Text>Hi</Text>
+			<Route exact path="/" component={Home} />
+			<Route path="/entry" component={Entry} />
+			<Route path="/edit" component={Edit} />
 
-    </NativeRouter>
-  );
+			<Route path="/upload" component={Upload} />
+		</NativeRouter>
+	);
 }
 
 // react-router-native
